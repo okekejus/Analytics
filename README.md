@@ -4,6 +4,8 @@ A Business Intelligence dashboard detailing the progress of Circle of Care to it
 
 The app can be viewed directly using this [link](https://circle-of-care.shinyapps.io/Analytics/)
 
+This is an ongoing project, as a result it will be updated frequently over the coming weeks.
+
 
 
 ## Background 
@@ -12,7 +14,7 @@ Earlier this year, I was hired as the Data Specialist for [Circle of Care](https
 
 Three months before my arrival, the organization began to use a scheduling algorithm to create the schedules of support workers in their three month probation period. There was no manner of tracking the progress/efficacy of the scheduling, and I was asked to create an evaluation of the algorithm's scheduling ability.
 
-As the data used in the dashboard is not sensitive/private, our current solution for live data is to upload entries onto a Google Sheet. This option has been selected as it is most accessible to members of the organization, and requires the least amount of training due to its similarity to Microsoft Excel. As the organization's needs change, the manner of storage will be adjusted accordingly.  
+To improve data processes, the data will be streamed from gooogle sheets. As the data used in the dashboard is not sensitive/private, our current solution for live data is to upload entries directly. This option has been selected as it is most accessible to members of the organization, and requires the least amount of training due to its similarity to Microsoft Excel. As the organization's needs change, the manner of storage will be adjusted accordingly.  
 
 
 ## Objectives 
