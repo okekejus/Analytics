@@ -12,7 +12,7 @@ Earlier this year, I was hired as the Data Specialist for [Circle of Care](https
 
 Three months before my arrival, the organization began to use a scheduling algorithm to create the schedules of support workers in their three month probation period. There was no manner of tracking the progress/efficacy of the scheduling, and I was asked to create an evaluation of the algorithm's scheduling ability.
 
-Currently the tidy data files used to create the dashboards are Excel Workbooks derived from the initial workbooks sent out by the organization prior to my arrival. Over the next few months, various department members and I will work to transition into an SQL database (MS Access) within the network drive. 
+As the data used in the dashboard is not sensitive/private, our current solution for live data is to upload entries onto a Google Sheet. This option has been selected as it is most accessible to members of the organization, and requires the least amount of training due to its similarity to Microsoft Excel. As the organization's needs change, the manner of storage will be adjusted accordingly.  
 
 
 ## Objectives 
