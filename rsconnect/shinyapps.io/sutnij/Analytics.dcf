@@ -1,0 +1,13 @@
+name: Analytics
+title: Analytics
+username:
+account: sutnij
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6698009
+bundleId: 6135711
+url: https://sutnij.shinyapps.io/Analytics/
+when: 1658862878.47612
+lastSyncTime: 1658862878.47613
+asMultiple: FALSE
+asStatic: FALSE

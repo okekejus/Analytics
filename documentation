@@ -1,0 +1,36 @@
+
+# Scripts -----------------------------------------------------
+
+00_setup.R 
+- packages necessary for app to run successfully 
+- functions that are used at various points in the script
+
+
+01_weekly_heatmap.R
+- Heat map and assessment data 
+- weekly, monthly, quarterly displays 
+- Number of entries in weekly heat map and weekly apr files must match 
+- Data sources include HPG & the SC Rejection Tracker 
+
+
+
+02_psw_utilization.R
+- Tracking PSW utilization over a 12 week period. 
+- Only applies to PSWs on probation at the moment. 
+- Data sources include EasyCare + Alicia
+
+
+03_risk_and_safety.R
+- Conversion of Emma's Risk and Safety DB into a dashboard. 
+
+
+
+# Functions ------------------------------------------------
+1. checkPackages: Checks the system to ensure all required packages are installed. 
+                 The function will install any missing package(s). 
+
+2. toPercent: Used to convert the decimals in PSW utilization worksheets to percentages. 
+3. namestoNull: Removes the names from a named numeric vector. 
+
+4. rejectionPercentage: Breaks down the rejections per HCCSS, based on the length of
+                       The rejected entry (>5, <=5, total). 

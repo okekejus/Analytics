@@ -1,0 +1,14 @@
+name: Analytics
+title: Analytics
+username:
+account: circleofcare
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6726482
+bundleId: 6189143
+url: https://circleofcare.shinyapps.io/Analytics/
+when: 1660155387.51811
+lastSyncTime: 1660155387.51817
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: documentation

@@ -1,0 +1,14 @@
+name: Analytics
+title: Analytics
+username:
+account: circle-of-care
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7149537
+bundleId: 6416719
+url: https://circle-of-care.shinyapps.io/Analytics/
+when: 1666126212.8836
+lastSyncTime: 1666126212.88361
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: 07_missed_care.R|coordinator_list.csv|documentation|missed_care.R|Montlyh.csv
