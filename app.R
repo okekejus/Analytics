@@ -3,6 +3,7 @@ library("DT")
 library("fresh")
 library("shinydashboard")
 library("plotly")
+library("googlesheets4")
 
 
 mytheme <- create_theme(adminlte_color(light_blue = "#00AEEF"), 
@@ -49,7 +50,8 @@ body <- dashboardBody(
                                                           fluidRow(box(title = "Hours Countered", 
                                                                        width = 12, 
                                                                        plotlyOutput("hours.countered.plot"),
-                                                                       footer = "(Hours Offered/Hours Rejected) * 100")),
+                                                                       footer = "(Hours Offered/Hours Rejected) * 100")
+                                                                   ),
                                                           fluidRow(tabBox(title = "Heat Maps",
                                                                           id = "hmap.tabset", 
                                                                           width = 12, 
@@ -62,7 +64,10 @@ body <- dashboardBody(
                                                           ), 
                                                           fluidRow(tabBox(title = "Missed Care", id = "mc.tabset", width = 12, height = "550px", 
                                                                           tabPanel("Count", plotlyOutput("mc.count")), 
-                                                                          tabPanel("Themes", plotlyOutput("mc.themes"))))
+                                                                          tabPanel("Themes", plotlyOutput("mc.themes"))), 
+                                                                   box(title = "test",
+                                                                       width = 12,
+                                                                       tableOutput("test")))
                                                  ),
                                                  tabPanel("Monthly", 
                                                           h2("Monthly Heat Map"), 
@@ -157,15 +162,29 @@ ui <- dashboardPage(header, sidebar, body)
 
 
 
-server <- function(input, output){
+server <- function(input, output, session){
                 
-                source('00_setup.R')              
+                source('00_setup.R') 
+                
+                
+                
+                weekly.hmap <- reactivePoll(2000, session,
+                                         checkFunc = function(){
+                                                         checkLength(sheet_id, "WeeklyHeatMap")
+                                                         }, 
+                                         valueFunc = function(){
+                                                         googlesheets4::read_sheet(sheet_id, "WeeklyHeatMap")
+                                                         }
+                                         )
+                
                 
                 
                 observeEvent(input$sidebarmenu, {
                                 
+                                
                                 if(input$sidebarmenu == "hmap"){
                                                 source("01_heatmap.R")
+                                           
                                                 
                                                 output$accepted.plot <- renderPlotly({weekly.accepted})
                                                 output$rejected.plot <- renderPlotly({weekly.refused})

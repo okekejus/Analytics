@@ -3,7 +3,7 @@
     "path": "~/Library/CloudStorage/OneDrive-Personal/Desktop/Analytics/app.R",
     "project_path": "app.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "769860597",
     "contents": "",
     "dirty": false,
     "created": 1664818309829.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "247,0",
-        "scrollLine": "158"
+        "cursorPosition": "186,43",
+        "scrollLine": "179"
     },
-    "folds": "164|49|238|16|\n166|64|200|32|\n",
-    "lastKnownWriteTime": 1666409244,
+    "folds": "",
+    "lastKnownWriteTime": 1666797940,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1666538836101,
+    "last_content_update": 1666797940597,
     "read_only": false,
     "read_only_alternatives": []
 }
